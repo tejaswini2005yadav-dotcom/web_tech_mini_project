@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    top:1cm;
+    left:1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h4, [type=button] {
+    position:relative;
+    left:4cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    position:relative;
+    left:10cm;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- IMAGE OF KHEER -->
+<img src="https://mypahadidukan.com/cdn/shop/articles/Kesar_Kheer_Recipe_ad0e3b6b-d2aa-45b9-89e0-a7e986ea0bec.jpg?v=1761216555">
+
+<h1>Kheer</h1>
+<hr>
+
+<!-- DESCRIPTION -->
+<h3>
+A creamy Indian pudding made by simmering rice in milk until thick and aromatic. 
+Enhanced with nuts, saffron, and cardamom, this comforting dessert is enjoyed warm 
+or chilled across festivals and family gatherings.
+</h3>
+
+<!-- ORDER SECTION -->
+<form>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.120 </th>
+
+    <th>Quantity<br>
+        <button onclick="decrease()">−</button>
+        <input type="number" name="quantity" min="1" max="5" value="1">
+        <button onclick="increase()">+</button>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

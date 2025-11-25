@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    top:1cm;
+    left:1cm;
+    width:50%;
+    height:100%;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h4, [type=button] {
+    position:relative;
+    left:4cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    position:relative;
+    left:10cm;
+}
+
+.table {
+    text-align:center;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- APPLE PIE IMAGE -->
+<img src="https://www.marthastewart.com/thmb/gzcr0iL7nSXBe6ehDQMNWQt41sA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSL-856573-basic-pie-dough-for-apple-pie-hero-horiz-0723-e07743bda3c84a44a6c3f00c4f878bbd.jpg">
+
+<h1 align="center"> Apple Pie </h1><hr>
+
+<!-- DESCRIPTION -->
+<p>
+<h3>
+A flaky, buttery pastry filled with tender apples cooked in cinnamon and brown sugar. 
+Warm, aromatic, and comforting, each slice captures the timeless charm of classic 
+homemade desserts.
+</h3>
+</p>
+
+<!-- FORM - NO SIZE SECTION -->
+<form>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.150 </th>
+
+    <th>Quantity<br>
+        <button onclick="decrease()">−</button>
+        <input type="number" name="quantity" min="1" max="5" value="1">
+        <button onclick="increase()">+</button>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+
+img
+{
+float:left;
+border:2px solid black;
+border-radius:15px;
+top:1cm;
+left:1cm;
+width:50%;
+height:100%;
+font-family: "Papyrus", "Copperplate", Fantasy;
+}
+h3
+{
+position:relative;
+left:2cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+}
+h4,[type=button]
+{
+position:relative;
+left:4cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+}
+[type=button]
+{
+position:relative;
+left:10cm;
+}
+
+.table
+{
+text-align:center;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+<body>
+<img src="https://tse2.mm.bing.net/th/id/OIP.7u5i8hxIFDbk6GBkAjTgLwHaFQ?rs=1&pid=ImgDetMain&o=7&rm=3">
+<h1 align="center"> Masala chai </h1><hr>
+
+<p><h3>Smooth, brisk black tea from the Nilgiri (Blue Mountains) in southern India.
+ Delicately floral with citrus and mint-like notes, it brews to a clear golden liquor and finishes clean and refreshing.
+ Perfect hot or iced, it’s a refined yet lively cup.</h3></p>
+
+<form>
+
+<h3>CUP SIZE</h3>
+<h4>
+<input type="radio" value="small" name="cup size" >Small<br>
+<input type="radio" value="medium" name="cup size" >Medium<br>
+<input type="radio" value="large" name="cup size" >Large<br></h4>
+<br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+<th>Total Price<br> Rs.45 </th>
+
+<th>Quantity<br><button  onclick="decrease()">−</button>
+<input type="number"  name="quantity" min="1" max="5" value="1">
+<button  onclick="increase()">+</button>
+<th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

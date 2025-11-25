@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    top:1cm;
+    left:1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h4, [type=button] {
+    position:relative;
+    left:4cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    position:relative;
+    left:10cm;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- RASGULLA IMAGE -->
+<img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/bengali_sponge_rasagulla.webp">
+
+<h1 align="center">Rasgulla</h1><hr>
+
+<!-- DESCRIPTION -->
+<h3>
+Light, spongy chenna dumplings simmered slowly in delicate sugar syrup. 
+Soft, airy, and refreshingly moist, this iconic Bengali sweet delivers 
+a clean sweetness and a satisfying springy texture with every bite.
+</h3>
+
+<form>
+
+<br><br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+
+<!-- PRICE -->
+<th>Total Price<br> Rs.120 </th>
+
+<!-- QUANTITY -->
+<th>
+Quantity<br>
+<button onclick="decrease()">−</button>
+<input type="number" name="quantity" min="1" max="5" value="1">
+<button onclick="increase()">+</button>
+</th>
+
+<!-- ADD TO CART -->
+<th><input type="submit" value="Add To Cart 🛒"></th>
+
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

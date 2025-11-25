@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+
+img
+{
+float:left;
+border:2px solid black;
+border-radius:15px;
+top:1cm;
+left:1cm;
+width:50%;
+height:100%;
+}
+h3
+{
+position:relative;
+left:2cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+h4,[type=button]
+{
+position:relative;
+left:4cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+[type=button]
+{
+position:relative;
+left:10cm;
+}
+
+.table
+{
+text-align:center;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+
+</style>
+</head>
+<body>
+<img src="https://i.pinimg.com/1200x/21/15/25/2115253a6bbb7e347fe8239dacc53def.jpg">
+<h1 align="center"> Pomegranate Juice   </h1><hr>
+
+<p><h3>Tradition: Pomegranate has ancient roots in Middle Eastern and Mediterranean cultures.
+Benefits: Powerful antioxidants; supports heart health.</h3></p>
+
+<form action="cart.html">
+
+<h3>CUP SIZE</h3>
+<h4>
+<input type="radio" value="small" name="cup size" >Small<br>
+<input type="radio" value="medium" name="cup size" >Medium<br>
+<input type="radio" value="large" name="cup size" >Large<br></h4>
+<br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+<th>Total Price<br> Rs.90 </th>
+
+<th>Quantity<br><button  onclick="decrease()">−</button>
+<input type="number"  name="quantity" min="1" max="5" value="1">
+<button  onclick="increase()">+</button>
+<th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

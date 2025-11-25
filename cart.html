@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+    background-color: #fff7e6;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h2, h3 {
+    opacity: 0;
+    animation: slideUp 1.2s ease forwards;
+}
+
+h3 {
+    animation-delay: 0.3s;
+}
+
+/* Fade-in animation for whole page */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide-up text animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: Add a soft card effect (not required) */
+.box {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fffaf0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Thank you for visiting our website ...!</h2>
+    <h3>Your order has been added to cart</h3>
+</div>
+
+</body>
+</html>

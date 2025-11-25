@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Black Forest Cake</title>
+<style>
+
+body {
+    background-color: #fff7e6;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+img {
+    float: left;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 100%;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    position: relative;
+    left: 2cm;
+    font-size: 22px;
+}
+
+.table {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Dessert Image -->
+<img src="https://kitchenfunwithmy3sons.com/wp-content/uploads/2025/02/Black-Forest-Cake-feature.jpg">
+
+<h1>Black Forest Cake</h1>
+<hr>
+
+<!-- Description -->
+<h3>
+Layers of moist chocolate sponge generously filled with whipped cream and cherry compote, 
+topped with chocolate curls. Sweet, creamy, slightly tangy, and beautifully balanced — 
+a classic dessert that never goes out of style.
+</h3>
+
+<br><br>
+
+<!-- Price, Quantity & Add to Cart -->
+<div style="clear: both;"></div>
+
+<form action="cart.html">
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.150 </th>
+
+    <th>
+        Quantity<br>
+        <button type="button" onclick="decrease()">−</button>
+        <input type="number" id="qty" name="quantity" min="1" max="5" value="1">
+        <button type="button" onclick="increase()">+</button>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒" ></th>
+</tr>
+</table>
+</form>
+
+<!-- Quantity JS -->
+<script>
+function increase() {
+    let q = document.getElementById("qty");
+    if (q.value < 5) q.value++;
+}
+function decrease() {
+    let q = document.getElementById("qty");
+    if (q.value > 1) q.value--;
+}
+</script>
+
+</body>
+</html>

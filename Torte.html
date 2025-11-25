@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    margin:1cm;
+    width:45%;
+    height:auto;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    font-size:22px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    margin-left:1cm;
+    margin-right:1cm;
+}
+
+.table {
+    text-align:center;
+    font-size:22px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    font-size:20px;
+    padding:5px 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="https://media.istockphoto.com/id/1199679729/photo/traditional-austrian-sacher-torte-chocolate-cake-sliced-on-white-plate.jpg?s=612x612&w=0&k=20&c=umhV3w-t4FxqSU_J9lnT4zZIOcIPuJLT_-UeCjvoCdA=">
+
+<h1>Sacher Torte</h1>
+<hr>
+
+<h3>
+A rich Austrian chocolate cake layered with smooth apricot jam and finished with a glossy dark chocolate glaze. 
+Dense, luxurious, and bittersweet, it is a refined dessert for true chocolate lovers.
+</h3>
+
+<form>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.180 </th>
+
+    <th>
+        Quantity<br>
+        <button type="button" onclick="decrease()">−</button>
+        <input type="number" name="quantity" min="1" max="5" value="1">
+        <button type="button" onclick="increase()">+</button>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+
+</form>
+
+<script>
+function decrease(){
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value > 1){ qty.value--; }
+}
+function increase(){
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value < 5){ qty.value++; }
+}
+</script>
+
+</body>
+</html>

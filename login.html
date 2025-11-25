@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+<style>
+
+body {
+    background-color: #ffd480;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Heading */
+h1 {
+    font-family: Papyrus;
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: 1.4;
+    color: #4a2c00;
+}
+
+/* Form Box */
+form {
+    background-color: #ffe6b3;
+    width: 60%;
+    max-width: 480px;
+    margin: 30px auto;
+    padding: 25px 20px;
+    border-radius: 20px;
+    border: 2px solid #4a2c00;
+}
+
+/* Labels */
+label {
+    font-family: Papyrus;
+    font-size: 20px;
+    color: #4a2c00;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b38a4c;
+    background-color: #ffd892;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 25px;
+    background-color: #ffcc66;
+    border: 2px solid #4a2c00;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Papyrus;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffd98c;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>
+    Register Here<br>
+    Enjoy the Delicacies 
+</h1>
+
+<form method="POST" action="details.php">
+
+    <label>NAME:</label>
+    <input type="text" name="user_name" required>
+
+    <label>MOBILE NUMBER:</label>
+    <input type="number" name="user_mob" required>
+
+    <label>EMAIL:</label>
+    <input type="email" name="user_email" required>
+
+    <input type="submit" name="submit" value="Login">
+
+</form>
+
+</body>
+</html>

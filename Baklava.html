@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    margin:1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-size:35px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    margin-left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    width:80%;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.quantity-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* spacing between buttons and input */
+}
+
+input[type=number] {
+    width:50px;
+    text-align:center;
+}
+
+button {
+    font-size:20px;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="https://i.shgcdn.com/d23dc9f7-1cc0-41c5-885d-dd4a63bdbcab/" />
+
+<h1>Baklava</h1>
+<hr>
+
+<h3>
+A luxurious Middle Eastern pastry built from thin layers of flaky phyllo dough 
+filled with crushed nuts and drenched in honey or rosewater syrup. 
+Crispy, buttery, and sweet, it delivers a multi-layered flavor and texture experience.
+</h3>
+
+<form>
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+
+<th>Total Price<br> Rs.180 </th>
+
+<th>
+Quantity<br>
+<div class="quantity-cell">
+    <button type="button" onclick="decrease()">−</button>
+    <input type="number" name="quantity" min="1" max="5" value="1">
+    <button type="button" onclick="increase()">+</button>
+</div>
+</th>
+
+<th><input type="submit" value="Add To Cart 🛒"></th>
+
+</tr>
+</table>
+</form>
+
+<script>
+function decrease() {
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value > 1) qty.value--;
+}
+
+function increase() {
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value < 5) qty.value++;
+}
+</script>
+
+</body>
+</html>

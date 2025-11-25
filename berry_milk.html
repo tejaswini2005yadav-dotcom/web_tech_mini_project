@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+
+img
+{
+float:left;
+border:2px solid black;
+border-radius:15px;
+top:1cm;
+left:1cm;
+width:50%;
+height:100%;
+}
+h3
+{
+position:relative;
+left:2cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+h4,[type=button]
+{
+position:relative;
+left:4cm;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+[type=button]
+{
+position:relative;
+left:10cm;
+}
+
+.table
+{
+text-align:center;
+font-size:24;
+font-family: "Papyrus", "Copperplate", Fantasy;
+
+}
+
+</style>
+</head>
+<body>
+<img src="https://i.pinimg.com/1200x/91/e8/20/91e82097022c99aae400070ad8b20a7d.jpg">
+<h1 align="center"> Berry Milkshake   </h1><hr>
+
+<p><h3>Packed with vitamins and antioxidants from mixed berries.
+Supports skin health and boosts immunity.</h3></p>
+
+<form>
+
+<h3>CUP SIZE</h3>
+<h4>
+<input type="radio" value="small" name="cup size" >Small<br>
+<input type="radio" value="medium" name="cup size" >Medium<br>
+<input type="radio" value="large" name="cup size" >Large<br></h4>
+<br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+<th>Total Price<br> Rs.120 </th>
+
+<th>Quantity<br><button  onclick="decrease()">−</button>
+<input type="number"  name="quantity" min="1" max="5" value="1">
+<button  onclick="increase()">+</button>
+<th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

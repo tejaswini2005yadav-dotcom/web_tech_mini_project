@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    margin:1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-size:32px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    margin-left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    width:80%;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.quantity-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* space between buttons and input */
+}
+
+input[type=number] {
+    width:50px;
+    text-align:center;
+}
+
+button {
+    font-size:20px;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="https://bamchocolate.com/uploads/recipes/74e9e23d-4040-4453-80e4-6950e4e21dd4/big/churrosi-z-bam-vanilijevim-posipom.jpeg">
+
+<h1>Churros</h1>
+<hr>
+
+<h3>
+Golden, crisp dough sticks fried to perfection and rolled in cinnamon sugar.  
+Warm and crunchy on the outside with a soft, doughy center — especially delightful  
+when dipped in chocolate or caramel sauce.
+</h3>
+
+<form>
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.150 </th>
+
+    <th>
+    Quantity<br>
+    <div class="quantity-cell">
+        <button type="button" onclick="decrease()">−</button>
+        <input type="number" name="quantity" min="1" max="5" value="1">
+        <button type="button" onclick="increase()">+</button>
+    </div>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+</form>
+
+<script>
+function decrease() {
+    let qty = document.getElementsByName("quantity")[0];
+    if(qty.value > 1) qty.value--;
+}
+
+function increase() {
+    let qty = document.getElementsByName("quantity")[0];
+    if(qty.value < 5) qty.value++;
+}
+</script>
+
+</body>
+</html>

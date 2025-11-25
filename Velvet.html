@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    margin:15px;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    font-size:40px;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:22px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    font-size:22px;
+}
+
+</style>
+
+<script>
+function increase() {
+    let qty = document.getElementById("qty");
+    if(qty.value < 5) qty.value++;
+}
+
+function decrease() {
+    let qty = document.getElementById("qty");
+    if(qty.value > 1) qty.value--;
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- IMAGE OF RED VELVET FROM CODE 2 -->
+<img src="https://assets.surlatable.com/m/6ae5b930e82d3ed1/72_dpi_webp-REC-505190-Red-Velvet-Layered-Cake.jpg">
+
+<h1>Red Velvet Cake</h1>
+<hr>
+
+<p>
+<h3>
+Famous for its vibrant red color and tender crumb, this cake combines 
+the flavor of light cocoa with the tang of cream cheese frosting. 
+Elegant, velvety, and irresistibly smooth — perfect for celebrations 
+and special occasions.
+</h3>
+</p>
+
+<form>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+<th>Total Price<br> Rs.150 </th>
+
+<th>
+Quantity<br>
+<button type="button" onclick="decrease()">−</button>
+<input type="number" id="qty" name="quantity" min="1" max="5" value="1">
+<button type="button" onclick="increase()">+</button>
+</th>
+
+<th>
+<input type="submit" value="Add To Cart 🛒">
+</th>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

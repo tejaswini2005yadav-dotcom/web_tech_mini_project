@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    top:1cm;
+    left:1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h4, [type=button] {
+    position:relative;
+    left:4cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    position:relative;
+    left:10cm;
+}
+
+.table {
+    text-align:center;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="https://i.pinimg.com/736x/77/23/7a/77237ab834becf3fc6f72bc58e87f672.jpg">
+
+<h1>Motichoor Laddoo</h1>
+<hr>
+
+<p>
+<h3>
+Made from tiny fried boondi pearls simmered in aromatic sugar syrup and shaped into soft golden spheres. 
+Rich, fragrant, and irresistibly smooth, this dessert is a symbol of celebrations and festive joy.
+</h3>
+</p>
+
+<form>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+<th>Total Price<br> Rs.180 </th>
+
+<th>Quantity<br>
+<button onclick="decrease()">−</button>
+<input type="number" name="quantity" min="1" max="10" value="1">
+<button onclick="increase()">+</button>
+</th>
+
+<th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

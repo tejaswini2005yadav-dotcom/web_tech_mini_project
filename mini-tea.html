@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TEA</title>
+<style>
+body
+{
+background-color: #fff7e6
+;
+}
+#cfe
+{
+position:relative;
+width:100%;
+height:90%;
+border:3px solid black;
+margin:auto;
+}
+.coffee
+{
+width:100%;
+border-radius:15px;
+border:1px solid black;
+    transition: transform 0.35s ease; /* added */
+
+}
+.coffee:hover {
+    transform: scale(1.05); /* smooth zoom */
+}
+.coffee-box
+{
+border: 1px solid black;
+border-radius: 15px;
+box-shadow: 2px 2px 20px black;
+margin:30px;
+text-align:center;
+width:15%;
+background-color: #fffaf0;
+padding:8px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease; /* added */
+
+}
+.coffee-box:hover {
+    transform: scale(1.06);
+    box-shadow: 2px 2px 30px black;
+}
+.cfe-txt
+{
+font-family: "Brush Script MT", cursive;
+font-size:30px; 
+}
+.cfe-containter
+{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+margin-top:20px;
+
+
+}
+</style>
+</head>
+
+<body>
+<img src="https://www.theteashelf.com/cdn/shop/articles/tea-glass-cup-wooden-table-tea-plantations-background_1500x.jpg?v=1679396414"id="cfe">
+<div class="cfe-containter">
+<div class="coffee-box"> 
+<a href=""><img src="data:image/jpeg;base64,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" class="coffee"></a>
+<div class="cfe-txt">Assam<br> calories:2 per cup</div>
+</div>
+<div class="coffee-box"> 
+<a href="darjeeling.html"><img src="https://teaforte.com/cdn/shop/articles/TF_What_Is_Darjeeling_HERO_V3_2880x1512_d72eecbe-c914-4fe3-8325-11366b7ee396.jpg?v=1705961868" class="coffee"></a>
+<div class="cfe-txt">Darjeeling<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="nilgiri.html"><img src="https://britishtea.com/cdn/shop/articles/What_Is_Nilgiri_Tea_Taste_Benefits_Why_It_Stands_Out_faea5143-3c97-4691-a9be-3514fd571622.jpg?v=1747045683" class="coffee"></a>
+<div class="cfe-txt">Nilgiri<br> calories:5-10</div>
+</div>
+<div class="coffee-box"> 
+<a href="masala.html"><img src="https://www.himalayanforesttea.com/cdn/shop/articles/What-Is-Masala-Tea-Made-Of-Himalayan-Forest-61828692_1200x.jpg?v=1747507262" class="coffee"></a>
+<div class="cfe-txt">Masala Chai<br> calories:50</div>
+</div>
+<div class="coffee-box"> 
+<a href="kashmir.html"><img src="https://www.bitensip.com/wp-content/uploads/2023/09/kashmiri-kahwa.jpg"  class="coffee"></a>
+<div class="cfe-txt">Kashmiri-kahwa<br> calories:1–5</div>
+</div>
+<div class="coffee-box"> 
+<a href="lemon_grass.html"><img src="https://budleaf.com/wp-content/uploads/2025/07/How-to-Make-Lemongrass-Tea_-A-Refreshing-Herbal-Remedy-for-Everyday-Wellness-1568x1045.jpeg" class="coffee"></a>
+<div class="cfe-txt">Lemon Grass Tea<br> calories:5–10</div>
+</div>
+<div class="coffee-box"> 
+<a href="tulasi_tea.html"><img src="https://maharishiayurvedaindia.com/cdn/shop/articles/tulsi_tea_benefits_detox_digestion_7ab9a471-2798-40a2-bd66-f58d44c5a2a5.jpg?v=1761805774" class="coffee"></a>
+<div class="cfe-txt">Tulsi Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href=""><img src="https://media.istockphoto.com/id/1283568348/photo/yak-butter-tea-known-as-po-cha-a-traditional-tibetan-drink-made-if-yak-butter-and-salt-close.jpg?s=612x612&w=0&k=20&c=WaQDWkQ0GFGqeErIHapTF4kfGZu8-W8sf0IrbLYbJIg=" class="coffee"></a>
+<div class="cfe-txt">Butter Tea<br> calories:13–20</div>
+</div>
+<div class="coffee-box"> 
+<a href="skkim_tea.html"><img src="https://www.indiainputs.com/wp-content/uploads/2024/12/Tea.webp"  class="coffee"></a>
+<div class="cfe-txt">Sikkim Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="moringa.html"><img src="https://media.istockphoto.com/id/1336503106/photo/ground-moringa-and-moringa-tea-on-rustic-table.jpg?s=612x612&w=0&k=20&c=W_WNUkZOTpUhe0d4QNv_fU24kppgy-IxLdci-y3n-R4=" class="coffee"></a>
+<div class="cfe-txt">Moringa<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href=""><img src="https://cspuerh.com/cdn/shop/files/v2-ddd11-unyo2.webp" class="coffee"></a>
+<div class="cfe-txt">English Breakfast Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="Earl.html "><img src="https://www.rishi-tea.com/cdn/shop/articles/Rishi-PDP-Preparation-EarlGrey-3_b2ac82f3-40cc-4513-95ee-f79680be5629.jpg?v=1738686232"class="coffee" ></a>
+<div class="cfe-txt">Earl Grey Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="matcha.html"><img src="https://byfood.b-cdn.net/api/public/assets/14628/matcha-bowl" class="coffee"></a>
+<div class="cfe-txt">Macha Tea<br> calories:3</div>
+</div>
+<div class="coffee-box"> 
+<a href="Sencha.html"><img src="https://blog.sakura.co/wp-content/uploads/2021/07/shutterstock_790031200-1.jpg" class="coffee"></a>
+<div class="cfe-txt">Sencha Tea<br> calories:5–10</div>
+</div>
+<div class="coffee-box"> 
+<a href="Rooibos.html"><img src="https://lovesometea.com/cdn/shop/articles/what_is_rooibos_tea.png?v=1749235724" class="coffee"></a>
+<div class="cfe-txt">Rooibos Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="pepperment.html"><img src="https://www.finedininglovers.com/sites/default/files/body_images/mint-tea-anti-stress%C2%A9iStock.jpg" class="coffee"></a>
+<div class="cfe-txt">Peppermint Tea<br> calories:5–10</div>
+</div>
+<div class="coffee-box"> 
+<a href="chamomile.html"><img src="https://connect.healthkart.com/wp-content/uploads/2022/11/900x500_banner_HK-Chamomile-tea-know-its-health-benefits.png" class="coffee"></a>
+<div class="cfe-txt">Chamomile Tea<br> calories:2–5</div>
+</div>
+<div class="coffee-box"> 
+<a href=""><img src="https://www.kuchatea.com/blog/wp-content/uploads/2021/08/AdobeStock_70252164-1600x1060.jpeg" class="coffee"></a>
+<div class="cfe-txt">Oolong Tea <br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href="Jasmine.html"><img src="https://cdn.shopify.com/s/files/1/0936/3013/6707/files/jasmine_oolong_tea_762c51af-bf68-4805-aa4b-ee25247a0ded.png?v=1759313695" class="coffee" height="45%" ></a>
+<div class="cfe-txt">Jasmine Tea<br> calories:2</div>
+</div>
+<div class="coffee-box"> 
+<a href=""><img src="https://www.alveus.eu/wp-content/smush-webp/031-a.jpg.webp" class="coffee"></a>
+<div class="cfe-txt">Pu-erh tea<br> calories:2</div>
+</div>
+</div>
+</body>
+</head>
+</html>

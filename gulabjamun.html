@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    width:50%;
+    height:100%;
+}
+
+h3 {
+    margin-left: 55%;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    margin-left: 55%;
+    margin-top: 30px;
+}
+
+.qty-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    font-size: 22px;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+input[type=number] {
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+</style>
+</head>
+<body>
+
+<img src="https://almondhouse.com/cdn/shop/files/1_IMG_9491_1e1968b7-b144-49ba-a4ed-2659e95a3bcb.jpg?v=1703680462">
+
+<h1 align="center"> Gulab Jamun </h1>
+<hr>
+
+<h3>
+Soft, velvety khoya balls deep-fried to a golden brown and gently soaked 
+in warm saffron-cardamom syrup. Each bite melts instantly on the tongue, 
+releasing a rich sweetness and buttery aroma. A timeless Indian classic 
+served during festivals, celebrations, and special family moments.
+</h3>
+
+<form>
+
+<table cellpadding="10" cellspacing="30" class="table">
+<tr>
+
+<th>Total Price <br> Rs.40</th>
+
+<th>
+Quantity <br><br>
+<div class="qty-box">
+    <button type="button" class="qty-btn" onclick="decrease()">−</button>
+    <input type="number" name="quantity" min="1" max="5" value="1">
+    <button type="button" class="qty-btn" onclick="increase()">+</button>
+</div>
+</th>
+
+<th><br><input type="submit" value="Add To Cart 🛒"></th>
+
+</tr>
+</table>
+
+</form>
+
+<script>
+function increase() {
+    let qty = document.querySelector("input[name='quantity']");
+    if (qty.value < 5) qty.value++;
+}
+
+function decrease() {
+    let qty = document.querySelector("input[name='quantity']");
+    if (qty.value > 1) qty.value--;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    margin: 1cm;
+    width:50%;
+    height:100%;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    font-size:35px;
+}
+
+h3 {
+    margin-left: 2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+    width:80%;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.quantity-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* space between buttons and input */
+}
+
+input[type=number] {
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="https://images.squarespace-cdn.com/content/v1/5b280045697a98dfbc04cef4/44145abd-3f1f-4e09-b84d-0e4326dfeb82/1.jpg">
+
+<h1>Gajar ka Halwa</h1>
+<hr>
+
+<h3>
+A comforting winter delicacy made by slow-cooking grated carrots in milk, ghee, and sugar 
+until rich and aromatic. Garnished with roasted nuts, it delivers warmth, sweetness, and a 
+luxurious texture — a festive favorite in Indian homes.
+</h3>
+
+<br><br>
+
+<form>
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+
+<th>Total Price<br> Rs.120 </th>
+
+<th>
+Quantity<br>
+<div class="quantity-cell">
+    <button type="button" onclick="decrease()">−</button>
+    <input type="number" name="quantity" min="1" max="5" value="1">
+    <button type="button" onclick="increase()">+</button>
+</div>
+</th>
+
+<th><input type="submit" value="Add To Cart 🛒"></th>
+
+</tr>
+</table>
+</form>
+
+<script>
+function increase(){
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value < 5){ qty.value++; }
+}
+function decrease(){
+    let qty = document.querySelector("input[name='quantity']");
+    if(qty.value > 1){ qty.value--; }
+}
+</script>
+
+</body>
+</html>

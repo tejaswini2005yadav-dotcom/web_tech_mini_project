@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jalebi</title>
+
+<style>
+body {
+    background-color: #fff7e6;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fffaf0;
+}
+
+img {
+    float: left;
+    width: 45%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.table {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: orange;
+    border: none;
+}
+</style>
+
+<script>
+function increase() {
+    let qty = document.getElementById("qty");
+    if (qty.value < 5) qty.value++;
+}
+function decrease() {
+    let qty = document.getElementById("qty");
+    if (qty.value > 1) qty.value--;
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Jalebi Image -->
+    <img src="https://sinfullyspicy.com/wp-content/uploads/2014/10/1200-by-1200-images-1.jpg">
+
+    <h1> Jalebi </h1><hr>
+
+    <!-- Jalebi Description -->
+    <p class="desc">
+        A crispy, syrup-soaked delight made from fermented batter swirled into hot oil and dipped 
+        in fragrant sugar syrup. Its crunch followed by a burst of warm sweetness makes it a 
+        beloved street dessert enjoyed at breakfast, weddings, and evening tea time across India.
+    </p>
+
+    <br><br>
+
+    <!-- Price & Quantity Table -->
+    <table cellpadding="10" cellspacing="30" align="center" class="table">
+        <tr>
+            <th>Total Price<br> Rs.60 </th>
+
+            <th>
+                Quantity <br>
+                <button type="button" onclick="decrease()">−</button>
+                <input type="number" id="qty" min="1" max="5" value="1" style="font-size:20px;">
+                <button type="button" onclick="increase()">+</button>
+            </th>
+
+            <th>
+                <input type="submit" value="Add To Cart 🛒">
+            </th>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WELCOME PAGE</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #3b2400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* HEADER IMAGE BOX */
+.header-box {
+    width: 90%;
+    max-width: 1100px;
+    height: 360px;
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #000;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.header-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.header-box h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: #ffffff;
+    text-shadow: 0 0 20px black;
+    letter-spacing: 1px;
+}
+
+/* MARQUEE TEXT */
+#mar {
+    font-size: 32px;
+    margin-top: 12px;
+    font-family: "Ink Free";
+    color: #ffddaa;
+    text-shadow: 0 0 12px black;
+}
+
+/* MENU BOXES */
+.menu-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.card {
+    background-color: #ffe5b0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #000;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(0,0,0,0.7);
+}
+
+.card img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER SECTION -->
+<div class="header-box">
+    <img src="https://i.pinimg.com/1200x/fe/fc/ba/fefcba5f4930ba341ac89f90197fe3c2.jpg">
+    <h1>Welcome to the World of COFFEE</h1>
+</div>
+
+<!-- COMBO OFFERS -->
+<a href="combo_offers.html" style="text-decoration:none;">
+    <marquee direction="right" behavior="alternate" id="mar">
+        SPECIAL COMBO OFFERS
+    </marquee>
+</a>
+
+<!-- MENU GRID -->
+<div class="menu-grid">
+
+    <a href="mini coffee.html" class="card">
+        <img src="https://i.pinimg.com/1200x/b3/5d/c9/b35dc9742470345f6725a8ea29c15d93.jpg">
+    </a>
+
+    <a href="mini-tea.html" class="card">
+        <img src="https://i.pinimg.com/736x/9b/54/fc/9b54fc90a99a125c4a4d69e10eb26fcd.jpg">
+    </a>
+
+    <a href="mini-desserts.html" class="card">
+        <img src="https://i.pinimg.com/736x/ac/88/34/ac8834e9f4158bba443001338e3ba485.jpg">
+    </a>
+
+    <a href="mini juice.html" class="card">
+        <img src="https://i.pinimg.com/736x/fe/47/3c/fe473cca38850a488824bc79e8f58c9a.jpg">
+    </a>
+
+</div>
+
+</body>
+</html>

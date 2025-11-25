@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+
+img
+{
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    top:1cm;
+    left:1cm;
+    width:50%;
+    height:100%;
+}
+h3
+{
+    position:relative;
+    left:2cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+h4, [type=button]
+{
+    position:relative;
+    left:4cm;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+[type=button]
+{
+    position:relative;
+    left:10cm;
+}
+.table
+{
+    text-align:center;
+    font-size:24;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Pavlova Image -->
+<img src="https://www.biggerbolderbaking.com/wp-content/uploads/2020/07/Pavlova-WS-Thumbnail.jpg">
+
+<h1 align="center"> Pavlova </h1>
+<hr>
+
+<!-- Pavlova Description -->
+<p>
+<h3>
+A beautiful meringue dessert featuring a crisp exterior and a marshmallow-soft inside, 
+topped with whipped cream and fresh fruits. Light, airy, fruity, and sweet — it’s a 
+refreshing treat that looks as stunning as it tastes.
+</h3>
+</p>
+
+<form>
+
+<br><br>
+
+<!-- PRICE + QUANTITY + ADD TO CART -->
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+    <th>Total Price<br> Rs.150 </th>
+
+    <th>
+        Quantity<br>
+        <button onclick="decrease()">−</button>
+        <input type="number" name="quantity" min="1" max="5" value="1">
+        <button onclick="increase()">+</button>
+    </th>
+
+    <th><input type="submit" value="Add To Cart 🛒"></th>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

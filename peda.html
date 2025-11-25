@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Peda</title>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    width:50%;
+    height:100%;
+    margin:15px;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.table {
+    text-align:center;
+    font-size:22px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+button {
+    font-size:20px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- IMAGE FROM CODE 2 -->
+<img src="https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2023/08/Kesar-Elaichi-peda-H1.jpg?fit=600%2C904&ssl=1">
+
+<h1>Peda</h1>
+<hr>
+
+<!-- DESCRIPTION PROVIDED BY YOU -->
+<h3>
+A soft, grainy sweet made by cooking milk, sugar, and ghee until thick and aromatic. 
+Shaped into round discs and sprinkled with saffron or pistachios, Pedas offer a rich, festive 
+sweetness that is enjoyed on religious and joyous occasions.
+</h3>
+
+<form>
+
+<br><br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+
+<!-- Price -->
+<th>
+Total Price<br> Rs.50
+</th>
+
+<!-- Quantity Selector -->
+<th>
+Quantity<br>
+<button onclick="decrease()">−</button>
+<input type="number" name="quantity" min="1" max="10" value="1">
+<button onclick="increase()">+</button>
+</th>
+
+<!-- Add to Cart -->
+<th>
+<input type="submit" value="Add To Cart 🛒" style="font-size:20px; font-family:Papyrus;">
+</th>
+
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

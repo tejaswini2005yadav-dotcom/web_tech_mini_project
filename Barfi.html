@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Barfi</title>
+<style>
+
+img {
+    float:left;
+    border:2px solid black;
+    border-radius:15px;
+    width:50%;
+    height:100%;
+    margin-right:20px;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+h3 {
+    position:relative;
+    left:2cm;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+.table {
+    text-align:center;
+    font-size:24px;
+    font-family: "Papyrus", "Copperplate", Fantasy;
+}
+
+[type=button] {
+    font-size:20px;
+}
+
+</style>
+
+<script>
+function increase() {
+    let qty = document.getElementById("qty");
+    if (qty.value < 5) qty.value++;
+}
+function decrease() {
+    let qty = document.getElementById("qty");
+    if (qty.value > 1) qty.value--;
+}
+</script>
+
+</head>
+
+<body>
+
+<img src="https://www.cookwithkushi.com/wp-content/uploads/2019/10/milk_burfi_milk_powder_barfi.jpg">
+
+<h1> Barfi </h1>
+<hr>
+
+<h3>
+A smooth, dense Indian milk fudge made by reducing milk to perfection with sugar and cardamom. 
+Often topped with nuts or edible silver leaf, Barfi is a celebration essential known for its rich flavor 
+and delightful creaminess.
+</h3>
+
+<form action="cart.html">
+<br><br>
+
+<table cellpadding="10" cellspacing="30" align="center" class="table">
+<tr>
+
+<th>Total Price<br> Rs. 60 </th>
+
+<th>
+Quantity <br>
+<button type="button" onclick="decrease()">−</button>
+<input type="number" id="qty" name="quantity" min="1" max="5" value="1">
+<button type="button" onclick="increase()">+</button>
+</th>
+
+<th><input type="submit" value="Add To Cart 🛒"></th>
+
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>
